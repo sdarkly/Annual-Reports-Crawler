@@ -22,7 +22,7 @@ def scrap_pdfs():
                 
         url = df['Link'][x] # reads the "Link" column from the dataframe
 
-        folder_location = r'/home/duke/Annual_Reports/Data' # SPECIFY FULL DIRECTORY 
+        folder_location = r'/crawler' # SPECIFY FULL DIRECTORY 
 
         response = requests.get(url)
         soup= bs(response.text, "html.parser")     
